@@ -613,6 +613,7 @@ header {
 .form-input.comment-input {
   height: 120px;
   padding: 12px 16px;
+  resize: none;
 }
 
 .form-input.comment-input::placeholder {

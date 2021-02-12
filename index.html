@@ -424,7 +424,7 @@
             <div class="footer-email-form">
                 <p class="footer-join">Подпишитесь на рассылку</p>
                 <form class="footer-form">
-                    <label><input type="email" placeholder="E-mail" class="footer-form-input"> 
+                    <label><input type="email" name="footer-email" placeholder="E-mail" class="footer-form-input" required> 
                     </label>
                     <button type="submit" class="hero-button">Подписаться
                         <svg width="24" height="24" class="footer-form-icon">
@@ -451,7 +451,7 @@
 
             <label class="form-label">
                 Телефон
-                <input type="text" name="client-phone" class="form-input" />
+                <input type="tel" name="client-phone" class="form-input" required />
                 <svg class="form-icon" width="18" height="18">
                     <use href="./images/sprite.svg#phone"></use>
                 </svg>
@@ -459,7 +459,7 @@
 
             <label class="form-label">
                 Почта
-                <input type="text" name="client-email" class="form-input" />
+                <input type="email" name="client-email" class="form-input" required />
                 <svg class="form-icon" width="18" height="18">
                     <use href="./images/sprite.svg#email"></use>
                 </svg>
@@ -473,7 +473,7 @@
             <label class="form-label checkbox-label">
                 Соглашаюсь с рассылкой и принимаю 
                 <a href="" class="agreement-link">Условия договора</a>
-                <input type="checkbox" name="agreement-checkbox" class="checkbox visually-hidden"/>
+                <input type="checkbox" name="agreement-checkbox" value="i-agree" class="checkbox visually-hidden"/>
                 <!--Кастомный чекбокс-->
                 <span class="checkbox-icon"> </span>
             </label>
