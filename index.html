@@ -359,7 +359,7 @@
     <footer class="footer">
         <div class="container">
             <!--Первый стлобец футера-->
-            <div>
+            <div class="footer-contacts">
                 <!--Логотип кампании-->
                 <a href="./index.html" class="logo"><span>Web</span>Studio</a>
 
@@ -420,19 +420,75 @@
                     </li>
                 </ul>
             </div>
+            <!--Третий столбец футера-->
+            <div class="footer-email-form">
+                <p class="footer-join">Подпишитесь на рассылку</p>
+                <form class="footer-form">
+                    <label><input type="email" placeholder="E-mail" class="footer-form-input"> 
+                    </label>
+                    <button class="hero-button">Подписаться
+                        <svg width="24" height="24" class="footer-form-icon">
+                            <use href="./images/sprite.svg#send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
-    <!--Модальное окно с овердеем-->
+    <!--Модальное окно с оверлеем-->
     <div class="overlay is-hidden" data-modal>
-        <div class="form">
+        <form class="form">
+
+            <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+            
+            <label  class="form-label">
+                Имя
+                <input type="text" name="client-name" class="form-input"/>
+                <svg class="form-icon" width="18" height="18">
+                    <use href="./images/sprite.svg#person"></use>
+                </svg>
+            </label>
+
+            <label class="form-label">
+                Телефон
+                <input type="text" name="client-phone" class="form-input" />
+                <svg class="form-icon" width="18" height="18">
+                    <use href="./images/sprite.svg#phone"></use>
+                </svg>
+            </label>
+
+            <label class="form-label">
+                Почта
+                <input type="text" name="client-email" class="form-input" />
+                <svg class="form-icon" width="18" height="18">
+                    <use href="./images/sprite.svg#email"></use>
+                </svg>
+            </label>
+            
+            <label class="form-label">
+                Комментарий
+                <textarea name="client-comments" class="form-input comment-input" placeholder="Введите текст"></textarea>
+            </label>
+
+            <label class="form-label checkbox-label">
+                Соглашаюсь с рассылкой и принимаю 
+                <a href="" class="agreement-link">Условия договора</a>
+                <input type="checkbox" name="agreement-checkbox" class="checkbox visually-hidden"/>
+                <!--Кастомный чекбокс-->
+                <span class="checkbox-icon"> </span>
+            </label>
+
+            <button type="submit" class="hero-button">Отправить</button>
+
+            <!--Круглая кнопка с крестиком для закрытия окна-->
             <button class="close-thumb" data-modal-close>
                 <svg class="close-icon">
                     <use href="./images/sprite.svg#cross"></use>
                 </svg>
             </button>
-        </div>
+        </form>
     </div>
-    
+    <!--Подключение JS-->
     <script src="./js/modal.js"></script>
 </body>
 </html>
